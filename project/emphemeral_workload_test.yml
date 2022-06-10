@@ -61,7 +61,7 @@
       azure.azcollection.azure_rm_virtualmachine:
         resource_group: "{{ resource_group_name }}"
         name: "{{ vm_name }}"
-        vm_size: "{{ vm_size | default('Standard_DS2_v3') }}"
+        vm_size: "{{ vm_size | default('Standard_A2_v2') }}"
         managed_disk_type: "{{ disk_type | default('Standard_LRS') }}"
         admin_username: "{{ admin_user | default('azureuser') }}"
         ssh_password_enabled: false
